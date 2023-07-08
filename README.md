@@ -32,3 +32,7 @@ Ok to proceed? (y) y
 ✔ Are you using React Server Components? … no / yes y
 ✔ Write configuration to components.json. Proceed? … yes
 ```
+
+### App Router ディレクトリ構成
+
+https://nextjs.org/docs/app/building-your-application/routing/route-groups
