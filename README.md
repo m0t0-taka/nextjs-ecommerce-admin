@@ -36,3 +36,19 @@ Ok to proceed? (y) y
 ### App Router ディレクトリ構成
 
 https://nextjs.org/docs/app/building-your-application/routing/route-groups
+
+
+## 認証
+
+clerk
+
+登録してプロジェクト作成
+
+https://clerk.com/?utm_source=www.google.com&utm_medium=referral&utm_campaign=none
+
+Doc
+
+https://clerk.com/docs/nextjs/get-started-with-nextjs
+
+```
+npm install @clerk/nextjs
