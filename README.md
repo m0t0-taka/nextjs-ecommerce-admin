@@ -15,6 +15,8 @@ Ok to proceed? (y) y
 ✔ Would you like to customize the default import alias? … No / Yes N
 ```
 
+UIライブラリにshadcnを使用
+
 ```
 % npx shadcn-ui@latest init
 
@@ -33,6 +35,15 @@ Ok to proceed? (y) y
 ✔ Write configuration to components.json. Proceed? … yes
 ```
 
+### Componentごとのインストール
+
+dialogの場合
+
+`npx shadcn-ui@latest add dialog`
+
+これを実行すると、components/ui配下にdialog componentが作られる
+
+
 ### App Router ディレクトリ構成
 
 https://nextjs.org/docs/app/building-your-application/routing/route-groups
@@ -50,5 +61,10 @@ Doc
 
 https://clerk.com/docs/nextjs/get-started-with-nextjs
 
-```
-npm install @clerk/nextjs
+
+`npm install @clerk/nextjs`
+
+
+### 状態管理
+
+`npm install zustand`
