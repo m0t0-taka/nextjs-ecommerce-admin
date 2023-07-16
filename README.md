@@ -68,3 +68,12 @@ https://clerk.com/docs/nextjs/get-started-with-nextjs
 ### 状態管理
 
 `npm install zustand`
+
+
+### Form
+
+shadcnのformとinputを使用する。このformにreact-hook-form、zodが含まれている。
+
+https://ui.shadcn.com/docs/components/form
+
+https://ui.shadcn.com/docs/components/input
