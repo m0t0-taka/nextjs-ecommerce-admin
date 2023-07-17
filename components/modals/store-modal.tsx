@@ -42,11 +42,11 @@ export const StoreModal = () => {
 
       const response = await axios.post("/api/stores", values);
 
-      window.location.assign(`/${response.data.id}`);
+      window.location.assign(`/${response.data.id}`); // nextのrouterでなく敢えてこの書き方されている！
     } catch (error) {
       toast.error("Something went wrong");
     } finally {
-      setLoading(false);
+      setLoading(false); // loading切はfinallyを使う方法がベストプラクティス！
     }
   };
 
