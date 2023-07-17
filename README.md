@@ -77,3 +77,42 @@ shadcnのformとinputを使用する。このformにreact-hook-form、zodが含�
 https://ui.shadcn.com/docs/components/form
 
 https://ui.shadcn.com/docs/components/input
+
+
+### Prisma
+
+ORMとしてPrismaを使用する。
+
+https://www.prisma.io/
+
+```
+npm i -D prisma
+npm install @prisma/client
+npx prisma init
+```
+これにより.envに環境変数がセットされる
+
+### DB
+
+DBはMySQLを使用する。
+
+MySQLの使用はPlanetScaleを利用する。
+
+https://planetscale.com/
+
+schema.prismaにschema定義後は、
+
+```
+npx prisma generate
+npx prisma db push
+```
+
+参考：https://planetscale.com/docs/prisma/prisma-quickstart#initialize-prisma
+
+### HTTPリクエストの扱い
+
+axiosを使用する。
+
+### react-hot-toast
+
+`npm i react-hot-toast`
