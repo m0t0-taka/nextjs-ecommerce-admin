@@ -116,3 +116,11 @@ axiosを使用する。
 ### react-hot-toast
 
 `npm i react-hot-toast`
+
+### DBのリセット方法
+
+```
+npx prisma migrate reset
+npx prisma generate
+npx prisma db push
+```
