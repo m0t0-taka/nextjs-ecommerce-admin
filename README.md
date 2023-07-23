@@ -124,3 +124,22 @@ npx prisma migrate reset
 npx prisma generate
 npx prisma db push
 ```
+
+### レアなTailwind CSS控え
+
+- transition-colors
+  色の変更を滑らかにする
+
+- shrink-0
+  これにより、flexboxでも、自動的に縮小されるのを防ぐ
+
+
+### 学習メモ
+
+#### TypeScriptのextends
+
+型定義を継承するときはextendsを使用する。
+
+#### lucide-react
+
+iconのライブラリ。shadcn install時に一緒にされる。
