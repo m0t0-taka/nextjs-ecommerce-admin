@@ -1,5 +1,9 @@
 ## Started Project
 
+```
+npm run dev
+```
+
 ### Documentation
 
 https://ui.shadcn.com/docs/installation/next
@@ -15,7 +19,7 @@ Ok to proceed? (y) y
 ✔ Would you like to customize the default import alias? … No / Yes N
 ```
 
-UIライブラリにshadcnを使用
+UI ライブラリに shadcn を使用
 
 ```
 % npx shadcn-ui@latest init
@@ -35,19 +39,17 @@ Ok to proceed? (y) y
 ✔ Write configuration to components.json. Proceed? … yes
 ```
 
-### Componentごとのインストール
+### Component ごとのインストール
 
-dialogの場合
+dialog の場合
 
 `npx shadcn-ui@latest add dialog`
 
-これを実行すると、components/ui配下にdialog componentが作られる
-
+これを実行すると、components/ui 配下に dialog component が作られる
 
 ### App Router ディレクトリ構成
 
 https://nextjs.org/docs/app/building-your-application/routing/route-groups
-
 
 ## 認証
 
@@ -61,27 +63,23 @@ Doc
 
 https://clerk.com/docs/nextjs/get-started-with-nextjs
 
-
 `npm install @clerk/nextjs`
-
 
 ### 状態管理
 
 `npm install zustand`
 
-
 ### Form
 
-shadcnのformとinputを使用する。このformにreact-hook-form、zodが含まれている。
+shadcn の form と input を使用する。この form に react-hook-form、zod が含まれている。
 
 https://ui.shadcn.com/docs/components/form
 
 https://ui.shadcn.com/docs/components/input
 
-
 ### Prisma
 
-ORMとしてPrismaを使用する。
+ORM として Prisma を使用する。
 
 https://www.prisma.io/
 
@@ -90,17 +88,18 @@ npm i -D prisma
 npm install @prisma/client
 npx prisma init
 ```
-これにより.envに環境変数がセットされる
+
+これにより.env に環境変数がセットされる
 
 ### DB
 
-DBはMySQLを使用する。
+DB は MySQL を使用する。
 
-MySQLの使用はPlanetScaleを利用する。
+MySQL の使用は PlanetScale を利用する。
 
 https://planetscale.com/
 
-schema.prismaにschema定義後は、
+schema.prisma に schema 定義後は、
 
 ```
 npx prisma generate
@@ -109,15 +108,25 @@ npx prisma db push
 
 参考：https://planetscale.com/docs/prisma/prisma-quickstart#initialize-prisma
 
-### HTTPリクエストの扱い
+次のようなエラーが出る場合、DB（planetscale）が止まっている（sleeping になっている）ので起こしてあげる必要がある。
 
-axiosを使用する。
+```
+Unhandled Runtime Error
+Error:
+Invalid `prisma.store.findFirst()` invocation:
+
+Error querying the database: Server error: `ERROR HY000 (1105): unavailable: unable to connect to branch
+```
+
+### HTTP リクエストの扱い
+
+axios を使用する。
 
 ### react-hot-toast
 
 `npm i react-hot-toast`
 
-### DBのリセット方法
+### DB のリセット方法
 
 ```
 npx prisma migrate reset
@@ -125,21 +134,20 @@ npx prisma generate
 npx prisma db push
 ```
 
-### レアなTailwind CSS控え
+### レアな Tailwind CSS 控え
 
 - transition-colors
   色の変更を滑らかにする
 
 - shrink-0
-  これにより、flexboxでも、自動的に縮小されるのを防ぐ
-
+  これにより、flexbox でも、自動的に縮小されるのを防ぐ
 
 ### 学習メモ
 
-#### TypeScriptのextends
+#### TypeScript の extends
 
-型定義を継承するときはextendsを使用する。
+型定義を継承するときは extends を使用する。
 
 #### lucide-react
 
-iconのライブラリ。shadcn install時に一緒にされる。
+icon のライブラリ。shadcn install 時に一緒にされる。
