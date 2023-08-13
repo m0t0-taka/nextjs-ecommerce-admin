@@ -65,11 +65,11 @@ https://clerk.com/docs/nextjs/get-started-with-nextjs
 
 `npm install @clerk/nextjs`
 
-### 状態管理
+## 状態管理
 
 `npm install zustand`
 
-### Form
+## Form
 
 shadcn の form と input を使用する。この form に react-hook-form、zod が含まれている。
 
@@ -77,7 +77,7 @@ https://ui.shadcn.com/docs/components/form
 
 https://ui.shadcn.com/docs/components/input
 
-### Prisma
+## Prisma
 
 ORM として Prisma を使用する。
 
@@ -91,7 +91,7 @@ npx prisma init
 
 これにより.env に環境変数がセットされる
 
-### DB
+## DB
 
 DB は MySQL を使用する。
 
@@ -118,14 +118,6 @@ Invalid `prisma.store.findFirst()` invocation:
 Error querying the database: Server error: `ERROR HY000 (1105): unavailable: unable to connect to branch
 ```
 
-### HTTP リクエストの扱い
-
-axios を使用する。
-
-### react-hot-toast
-
-`npm i react-hot-toast`
-
 ### DB のリセット方法
 
 ```
@@ -134,7 +126,27 @@ npx prisma generate
 npx prisma db push
 ```
 
-### レアな Tailwind CSS 控え
+## HTTP リクエストの扱い
+
+axios を使用する。
+
+## react-hot-toast
+
+`npm i react-hot-toast`
+
+## Cloudinary
+
+https://cloudinary.com/
+
+Next.js 用の Documentation
+
+https://next.cloudinary.dev/
+
+```
+npm install next-cloudinary
+```
+
+## レアな Tailwind CSS 控え
 
 - transition-colors
   色の変更を滑らかにする
@@ -142,7 +154,7 @@ npx prisma db push
 - shrink-0
   これにより、flexbox でも、自動的に縮小されるのを防ぐ
 
-### 学習メモ
+## 学習メモ
 
 #### TypeScript の extends
 
