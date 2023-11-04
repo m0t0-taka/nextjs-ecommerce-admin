@@ -108,7 +108,7 @@ npx prisma db push
 
 参考：https://planetscale.com/docs/prisma/prisma-quickstart#initialize-prisma
 
-次のようなエラーが出る場合、DB（planetscale）が止まっている（sleeping になっている）ので起こしてあげる必要がある。
+次のようなエラーが出る場合、DB（planetscale）が止まっている（sleeping になっている）ので planetscale にログインして、起こしてあげる必要がある。
 
 ```
 Unhandled Runtime Error
